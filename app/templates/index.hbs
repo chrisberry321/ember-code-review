@@ -1,9 +1,10 @@
 <h1>Questions and Answers</h1>
 
+  <button class="new-question"{{new-question save2="save3"}}>Enter A Question</button>
 
 <ul>
   {{#each model as |question|}}
-  {{question-tile question=question}}
+  {{question-tile question=question destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
 
