@@ -1,0 +1,14 @@
+{ "questions": [{
+    "submit": "Is the sun hot?",
+    "author": "Tyler",
+    "notes": "I have not been but I hear its hot"
+  }, {
+    "submit": "Is the sun big?",
+    "author": "Chris",
+    "notes": "It does not look that big"
+  }, {
+    "submit": "Is the sun cold at night?",
+    "author": "Mike",
+    "notes": "I think it might stay hot"
+  }]
+}

@@ -1,0 +1,11 @@
+<h1>Questions and Answers</h1>
+
+
+<ul>
+  {{#each model as |question|}}
+  {{question-tile question=question}}
+  {{/each}}
+</ul>
+
+
+{{#link-to 'about'}} About {{/link-to}}
