@@ -10,8 +10,22 @@
 .HolyGrail-body {
   display: flex;
   flex: 1;
+
+}
+.HolyGrail-body ul {
+  text-align: center;
+  margin-top: 29vh;
+}
+.HolyGrail-body li {
+  list-style: none;
+  font-size: 2em;
 }
 
+.HolyGrail-body a {
+  color: white;
+  text-shadow: 2px 2px black;
+
+}
 .jumbotron {
   margin-top: 30px;
   text-align: center;
