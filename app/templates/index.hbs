@@ -13,10 +13,12 @@
         {{/each}}
       </ul>
 
-      <h2>Responses</h2>
-      {{#each model.responses as |response|}}
-      <li>{{response.answer}} by {{response.author}}</li>
-      {{/each}}
+      <div class="responses">
+        <h2>Responses</h2>
+        {{#each model.responses as |response|}}
+        <li>{{response-tile response=response destroyResponse="desroyResponse"}}</li>
+        {{/each}}
+      </div>
     </div>
   </div>
 

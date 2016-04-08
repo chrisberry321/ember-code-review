@@ -53,7 +53,19 @@
   color: black;
   font-weight: bolder;
 }
-
+.updateQuestion-button {
+  margin: 8px;
+}
+.notes {
+  margin: 8px;
+}
+.delete-question {
+  margin-left: 8px;
+}
+.app-temp-question-hbs h2{
+  text-align: center;
+  margin: 48px 0;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -65,4 +77,16 @@ footer {
 footer a{
   margin-left: 30px;
   align-self: center;
+}
+.responses h2 {
+  color: white;
+}
+.responses a{
+}
+.responses li{
+  font-size: 1em;
+  color: white;
+}
+.responses li:hover{
+  transform: none;
 }

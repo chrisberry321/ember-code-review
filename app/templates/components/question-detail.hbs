@@ -1,7 +1,7 @@
 {{#if isNotesShowing}}
 <p> notes: {{question.notes}} <button{{action 'notesHide'}}>Hide</button> </p>
 {{else}}
-<button class="notes"{{action 'notesShow'}}>Notes</button>
+<button class="notes"{{action 'notesShow'}}>Notes</button> <br>
 {{/if}}
 
-<button {{action 'delete' question}}>Delete</button>
+<button class="delete-question" {{action 'delete' question}}>Delete</button>
