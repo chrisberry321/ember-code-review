@@ -8,10 +8,15 @@
     <div class="container">
       {{new-question save2="save3"}}
       <ul>
-        {{#each model as |question|}}
+        {{#each model.questions as |question|}}
         {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
         {{/each}}
       </ul>
+
+      <h2>Responses</h2>
+      {{#each model.responses as |response|}}
+      <li>{{response.answer}} by {{response.author}}</li>
+      {{/each}}
     </div>
   </div>
 

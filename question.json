@@ -10,5 +10,12 @@
     "submit": "Is the sun cold at night?",
     "author": "Mike",
     "notes": "I think it might stay hot"
+  }],
+  "responses": [{
+    "answer": "Yes the sun is very hot",
+    "author": "captian"
+  }, {
+    "answer": "it is 400 inches around the earth",
+    "author": "Dan"
   }]
 }
