@@ -2,9 +2,48 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/ba/The_Lake_and_the_Galileo_Galilei_Planetarium,_Buenos_Aires_-_Infrared.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .HolyGrail-body {
   display: flex;
   flex: 1;
+}
+
+.jumbotron {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.jumbotron h1 {
+
+  color: white;
+}
+
+.newQuestion-button {
+
+  margin-left: 46%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 80px;
+  background-color: lightgray;
+}
+
+footer a{
+  margin-left: 30px;
+  align-self: center;
 }

@@ -1,15 +1,15 @@
 <body class="body">
-  <header>
+  <header class="container">
     <div class="jumbotron">
       <h1>Questions and Answers</h1>
     </div>
   </header>
   <div class="HolyGrail-body">
-    <div class="container">    
+    <div class="container">
       {{new-question save2="save3"}}
       <ul>
         {{#each model as |question|}}
-        {{question-tile question=question destroyQuestion="destroyQuestion"}}
+        {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
         {{/each}}
       </ul>
     </div>
