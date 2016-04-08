@@ -20,11 +20,16 @@
   list-style: none;
   font-size: 2em;
 }
+.HolyGrail-body li:hover{
+  transform: scale(1.2);
+}
 
 .HolyGrail-body a {
   color: white;
   text-shadow: 2px 2px black;
-
+}
+.HolyGrail-body a:hover {
+  color: blue;
 }
 .jumbotron {
   margin-top: 30px;
