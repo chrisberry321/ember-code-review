@@ -21,7 +21,7 @@
   font-size: 2em;
 }
 .HolyGrail-body li:hover{
-  transform: scale(1.2);
+  transform: scale(1.015);
 }
 
 .HolyGrail-body a {
@@ -40,7 +40,14 @@
 
   color: white;
 }
-
+.appTempQuestionHbs h2 {
+  text-align: center;
+  color: white;
+}
+.appTempQuestionHbs h3 {
+  text-align: center;
+  color: tomato;
+}
 .newQuestion-button {
 
   margin-left: 46%;
@@ -52,6 +59,13 @@
   background-color: white;
   color: black;
   font-weight: bolder;
+}
+form {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 350px;
+}
+input {
+  color: blue;
 }
 .updateQuestion-button {
   margin: 8px;

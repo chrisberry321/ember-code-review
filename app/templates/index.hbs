@@ -1,30 +1,17 @@
-<body class="body">
-  <header class="container">
-    <div class="jumbotron">
-      <h1>Questions and Answers</h1>
-    </div>
-  </header>
-  <div class="HolyGrail-body">
-    <div class="container">
-      {{new-question save2="save3"}}
-      <ul>
-        {{#each model.questions as |question|}}
-        {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
-        {{/each}}
-      </ul>
 
-      <div class="responses">
-        <h2>Responses</h2>
-        {{#each model.responses as |response|}}
-        <li>{{response-tile response=response destroyResponse="destroyResponse"}}</li>
-        {{/each}}
-         {{new-response save5="save6"}}
-      </div>
-    </div>
+<div class="container">
+  {{new-question save2="save3"}}
+  <ul>
+    {{#each model.questions as |question|}}
+    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
+    {{/each}}
+  </ul>
+
+  <div class="responses">
+    <h2>Responses</h2>
+    {{#each model.responses as |response|}}
+    <li>{{response-tile response=response destroyResponse="destroyResponse"}}</li>
+    {{/each}}
+    {{new-response save5="save6"}}
   </div>
-
-  <footer>
-    {{#link-to 'about'}} About {{/link-to}}
-  </footer>
-</body>
-<!-- destroyResponse="destroyResponse" -->
+</div>
