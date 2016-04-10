@@ -10,6 +10,7 @@
 .HolyGrail-body {
   display: flex;
   flex: 1;
+  min-height: 70vh;
 
 }
 .HolyGrail-body ul {
@@ -47,6 +48,13 @@
 .appTempQuestionHbs h3 {
   text-align: center;
   color: tomato;
+}
+.modelAuthor {
+  color: tomato;
+}
+
+.questionDetails {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .newQuestion-button {
 

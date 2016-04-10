@@ -5,6 +5,10 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
+    destroyQuestion(question) {
+      question.destroyRecord();
+      this.transitionTo('index');
+    },
     update(question, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
@@ -12,10 +16,15 @@ export default Ember.Route.extend({
         }
       });
       question.save();
+      this.transitionTo('question');
+    },
+    destroyResponse(response) {
+      response.destroyRecord();
       this.transitionTo('index');
     },
-    destroyQuestion(question) {
-      question.destroyRecord();
+    save6(params) {
+      var newResponse = this.store.createRecord('response', params);
+      newResponse.save();
       this.transitionTo('index');
     }
   }

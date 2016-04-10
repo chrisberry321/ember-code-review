@@ -1,8 +1,17 @@
 <div class="container">
   <div class="appTempQuestionHbs">
-    <h2>A closer look at {{model.author}}'s question.</h2>
-    <h3>{{model.submit}}</h3>
+    <div class="questionDetails">
+      <h2>A closer look at <span class="modelAuthor"> {{model.author}}'s</span> question.</h2>
+      <h3>{{model.submit}}</h3>
+    </div>
     {{question-detail question=model destroyQuestion="destroyQuestion"}}
     {{update-question question=model update="update"}}
+  </div>
+  <div class="responses">
+    <h2>Responses</h2>
+    {{#each model.responses as |response|}}
+    <li>{{response-tile response=response destroyResponse="destroyResponse"}}</li>
+    {{/each}}
+    {{new-response save5="save6"}}
   </div>
 </div>
