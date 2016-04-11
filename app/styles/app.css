@@ -113,9 +113,10 @@ footer a{
 }
 
 .responses li{
-  font-size: 1em;
-  color: white;
-}
-.responses li:hover{
-  transform: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  color: tomato;
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 400px;
 }
