@@ -41,32 +41,40 @@
 
   color: white;
 }
-.appTempQuestionHbs h2 {
+.appTempQuestionHbs h4 {
   text-align: center;
   color: white;
 }
-.appTempQuestionHbs h3 {
+.appTempQuestionHbs h1 {
   text-align: center;
   color: tomato;
 }
 .modelAuthor {
   color: tomato;
 }
-
+.notesShow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 300px;
+  background-color: white;
+  color: tomato;
+}
 .questionDetails {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .newQuestion-button {
 
-  margin-left: 46%;
+  margin-left: 42%;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 10px 25px;
   border: none;
   border-radius: 8px;
   background-color: white;
-  color: black;
+  color: tomato;
   font-weight: bolder;
+  box-shadow: 6px 6px 3px #111111;
 }
 form {
   background-color: rgba(255, 255, 255, 0.7);

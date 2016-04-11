@@ -20,7 +20,7 @@ export default Ember.Route.extend({
     },
     destroyResponse(response) {
       response.destroyRecord();
-      this.transitionTo('index');
+      this.transitionTo('question');
     },
     save6(params) {
       var newResponse = this.store.createRecord('response', params);
