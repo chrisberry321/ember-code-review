@@ -5,3 +5,8 @@
 {{/if}}
 
 <button class="delete-question" {{action 'delete' question}}>Delete</button>
+
+
+{{#each model.responses as |response|}}
+<li>{{response-tile response=response destroyResponse="destroyResponse"}}</li>
+{{/each}}
