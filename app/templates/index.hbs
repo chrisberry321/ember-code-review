@@ -7,11 +7,4 @@
     {{/each}}
   </ul>
 
-  <div class="responses">
-    <h2>Responses</h2>
-    {{#each model.responses as |response|}}
-    <li>{{response-tile response=response destroyResponse="destroyResponse"}}</li>
-    {{/each}}
-    {{new-response save5="save6"}}
-  </div>
 </div>
