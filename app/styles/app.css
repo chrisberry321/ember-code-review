@@ -11,7 +11,11 @@
   display: flex;
   flex: 1;
   min-height: 70vh;
+  padding-left: 12px;
+}
 
+.HolyGrail-body h2 {
+  text-shadow: 1.2px 1.2px white;
 }
 .HolyGrail-body ul {
   text-align: center;
@@ -27,6 +31,7 @@
 
 .HolyGrail-body a {
   color: white;
+  padding-left: 10px;
   text-shadow: 2px 2px black;
 }
 .HolyGrail-body a:hover {
@@ -35,10 +40,9 @@
 .jumbotron {
   margin-top: 30px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .jumbotron h1 {
-
   color: white;
 }
 .appTempQuestionHbs h4 {
@@ -64,7 +68,6 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 .newQuestion-button {
-
   margin-left: 42%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -102,11 +105,14 @@ footer {
   justify-content: flex-start;
   height: 80px;
   background-color: lightgray;
+  opacity: 0.9;
 }
 
 footer a{
   margin-left: 30px;
   align-self: center;
+  font-weight: bold;
+  opacity: 1;
 }
 .responses h2 {
   color: white;
@@ -119,4 +125,18 @@ footer a{
   color: tomato;
   background-color: rgba(0, 0, 0, 0.4);
   max-width: 400px;
+}
+
+.aboutDescription {
+  background-color: rgba(220, 220, 220, 0.8);
+  border-radius: 4px;
+  padding-left: 12px;
+  width: 90vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .HolyGrail-body h2{
+    color: white;
+    text-shadow: 0 0 white;
+  }
 }
